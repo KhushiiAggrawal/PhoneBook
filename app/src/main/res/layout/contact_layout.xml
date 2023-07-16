@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:elevation="4dp"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end|center"
+            android:backgroundTint="#9BA3D2"
+            android:text="Save"
+            android:textColor="#103066"
+            android:id="@+id/submitbtn"
+            android:layout_marginEnd="10dp"></Button>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity"
+            android:padding="15sp"
+            android:background="@color/black">
+
+            <ImageView
+                android:id="@+id/imgebtn"
+                android:layout_width="120sp"
+                android:layout_height="120sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50sp"
+                android:scaleType="centerCrop"
+                android:padding="30sp"
+                android:background="@drawable/image_bg"
+                android:src="@drawable/baseline_add_photo_alternate_24" />
+
+            <Button
+                android:id="@+id/imgebtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/black"
+                android:text="Add picture"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textColor="#769FE4"
+                ></Button>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_person_24"
+                    android:layout_gravity="center"></ImageView>
+                <EditText
+                    android:id="@+id/firstname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:ems="13"
+                    android:hint="First Name"
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/edittext_bg"></EditText>
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="25sp"
+                android:layout_height="25sp"
+                android:layout_gravity="center"></ImageView>
+            <EditText
+                android:id="@+id/lastname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:ems="13"
+                android:hint="Last Name"
+                android:inputType="text"
+                android:padding="20dp"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:background="@drawable/edittext_bg"></EditText>
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_business_24"
+                    android:layout_gravity="center"></ImageView>
+                <EditText
+                    android:id="@+id/company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:ems="13"
+                    android:hint="Company"
+                    android:inputType="text"
+                    android:padding="20dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/edittext_bg"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_phone_24"
+                    android:layout_gravity="center"></ImageView>
+
+                <EditText
+                    android:id="@+id/phoneno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:ems="13"
+                    android:hint="Phone Number"
+                    android:inputType="phone"
+                    android:padding="20dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/edittext_bg"></EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_mail_outline_24"
+                    android:layout_gravity="center"></ImageView>
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:ems="13"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="20dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/edittext_bg"></EditText>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_calendar_month_24"
+                    android:layout_gravity="center"></ImageView>
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/edittext_bg"
+                    android:ems="13"
+                    android:hint="Birthdate"
+                    android:text="Select Date"
+                    android:padding="20dp"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"></TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

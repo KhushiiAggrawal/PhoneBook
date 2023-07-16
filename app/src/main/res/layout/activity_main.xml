@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layerType="hardware"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/black">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:queryHint="Search here"
+        android:background="@drawable/search_view_bg"
+        android:clickable="true"
+        app:iconifiedByDefault="false"
+        app:queryBackground="@android:color/transparent"/>
+
+    <FrameLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="66dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="80dp"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Contactview"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ImageButton
+            android:id="@+id/addbtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/image_bg"
+            android:padding="5sp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/baseline_add_24" />
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#292828"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/contacts">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            >
+
+            <ImageButton
+                android:id="@+id/contactbtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_person_24"
+                android:background="#292828"
+                android:layout_weight="1"
+                android:layout_marginTop="5sp"
+                android:layout_marginStart="25sp"
+                android:layout_marginEnd="25sp"
+                android:layout_marginBottom="5sp"
+                ></ImageButton>
+
+            <ImageButton
+                android:id="@+id/favouritesbtn"
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:src="@drawable/baseline_star_outline_24"
+                android:background="#292828"
+                android:layout_marginTop="5sp"
+                android:layout_marginStart="25sp"
+                android:layout_marginEnd="25sp"
+                android:layout_marginBottom="5sp"
+                android:layout_weight="1"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/fixmanagebtn"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/baseline_build_24"
+                android:layout_marginTop="5sp"
+                android:layout_marginStart="25sp"
+                android:layout_marginEnd="25sp"
+                android:layout_marginBottom="5sp"
+                android:background="#292828"></ImageButton>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="15sp">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#292828"
+                android:text="Contacts"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:textColor="@color/white"></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#292828"
+                android:gravity="center"
+                android:text="Favourites"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:textColor="@color/white"
+                android:textSize="10sp"></TextView>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#292828"
+                android:text="Fix&amp;Manage"
+                android:textSize="10sp"
+                android:gravity="center"
+                android:layout_marginStart="20sp"
+                android:layout_marginEnd="20sp"
+                android:textColor="@color/white"></TextView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
